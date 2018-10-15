@@ -151,5 +151,79 @@
 >1. 熟悉Android SDK，熟悉Android UI，熟悉Android各种调试工具；  
 >2. 有丰富的Android应用架构能力，能够独立主导并架构App；  
 >3. Mobile Web 开发经验；具备各种复合技能：熟悉iOS、H5、Python、.NET等多种开发语言的优先考虑；  
->4. 对Android性能优化，安全，软件加固，自动化测试有深刻认识;5. 博客，开源项目
+>4. 对Android性能优化，安全，软件加固，自动化测试有深刻认识;  
+>5. 博客，开源项目
+
+# Android技术难点
+>AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于定位自己为高级Android工程师的人来说是必须掌握的，同时他也是能鉴别高级和初中级工程师的一块试金石，其中binder是Android系统进程间通信最重要的手段之一，现阶段app的发展离不开多进程的运用，经常会启动例如定位、推送等需要在后台开启动的进程来来保证主进程的内存运行；所以合理的使用多进程也是十分必要的；view的绘制是我们自定义控件的理论基础，只有掌握了view是如何绘制的才能个性化的自定义控件；事件分发一直是Android开发的难点之一，也是必须掌握的；关于handler机制也是android的一块难点，因为包括Asynctask、系统启动、Intentservice等底层都是通过handler来实现的，所以掌握后handler机制不仅能提高你的实战开发能力，更能让你系统的了解整个android系统运作的情况。
+
+# Android框架层源码掌握  
+>Android框架层有很多东西，以下几个是高级程序员必须要掌握的：  
+>Android包管理机制，核心PackageManagerService  
+>Window管理，核心WindowManagerService  
+>Android Activity启动和管理，核心ActivityManagerService  
+>根Activity工作流程  
+>Context关联类
+
+# 各种原理，经典第三方库源码系列
+* 自定义LayoutManager，RecyclerView中如何自定义LayoutManager
+
+* VLayout实现原理，即如何自定义LayoutManager
+
+* Glide加载原理，缓存方案，LRU算法
+
+* Retrofit的实现与原理
+
+* OKHttp3的使用，网络请求中的Intercept
+
+* EventBus实现原理
+
+* ButterKnife实现原理
+
+* RxJava实现原理
+
+* Dagger依赖注入
+
+* 热修复实现原理，解决方案
+
+* 组件化原理和解决方案
+
+# Android进程通信以及多进程开发
+Android 多进程和Application关系
+
+经典解决方案：[多进程通信解决方案：Andromeda](https://mp.weixin.qq.com/s/PZs1wss3PizqSE8U2RGXYw)
+
+# Android动画机制
+经典学习资料：[HenCoder: 给高级Android工程师的进阶手册](http://hencoder.com/?utm_source=gank&utm_medium=website&utm_campaign=rxjava)
+
+# Android绘图原理
+经典学习资料：[HenCoder: 给高级Android工程师的进阶手册](http://hencoder.com/?utm_source=gank&utm_medium=website&utm_campaign=rxjava)
+
+#Android页面恢复
+Android的页面恢复采用以下两个方法：
+
+onSaveInstanceState(Bundle outState)
+
+onRestoreInstanceState(Bundle savedInstanceState)
+
+onSaveInstanceState: 当Activity容易被系统销毁时，会触发该方法。具体的说
+
+用户点击Home键
+
+用户点击Home键，切换到其他应用程序
+
+有电话来了等附加操作
+
+#混合开发及Android WebView应用
+混合开发涉及到的知识点主要包括：
+
+APP调用WebView加载url
+
+掌握WebView的封装，了解所有的WebSettings配置，掌握WebViewClient、WebChromeClient
+
+掌握WebView和Native双向通信机制，会自己封装双向通信中间件
+
+对WebView的封装可参考：[GitHub: AgentWeb](https://github.com/Justson/AgentWeb)
+
+对通信中间件原理理解：[GitHub：webprogress](https://github.com/xudjx/webprogress)
 
