@@ -214,7 +214,7 @@ onSaveInstanceState: 当Activity容易被系统销毁时，会触发该方法。
 1.  APP调用WebView加载url  
 2.  掌握WebView的封装，了解所有的WebSettings配置，掌握WebViewClient、WebChromeClient  
 3.  掌握WebView和Native双向通信机制，会自己封装双向通信中间件
-  
-  对WebView的封装可参考：[GitHub: AgentWeb](https://github.com/Justson/AgentWeb)
-  对通信中间件原理理解：[GitHub：webprogress](https://github.com/xudjx/webprogress)
+    
+    对WebView的封装可参考：[GitHub: AgentWeb](https://github.com/Justson/AgentWeb)  
+    对通信中间件原理理解：[GitHub：webprogress](https://github.com/xudjx/webprogress)
 
