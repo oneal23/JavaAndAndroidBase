@@ -199,31 +199,21 @@ Android 多进程和Application关系
 # Android绘图原理
 经典学习资料：[HenCoder: 给高级Android工程师的进阶手册](http://hencoder.com/?utm_source=gank&utm_medium=website&utm_campaign=rxjava)
 
-#Android页面恢复
-Android的页面恢复采用以下两个方法：
-
-onSaveInstanceState(Bundle outState)
-
-onRestoreInstanceState(Bundle savedInstanceState)
+# Android页面恢复
+Android的页面恢复采用以下两个方法：  
+onSaveInstanceState(Bundle outState)  
+onRestoreInstanceState(Bundle savedInstanceState)  
 
 onSaveInstanceState: 当Activity容易被系统销毁时，会触发该方法。具体的说
+1.  用户点击Home键  
+2.  用户点击Home键，切换到其他应用程序  
+3.  有电话来了等附加操作
 
-用户点击Home键
-
-用户点击Home键，切换到其他应用程序
-
-有电话来了等附加操作
-
-#混合开发及Android WebView应用
+# 混合开发及Android WebView应用
 混合开发涉及到的知识点主要包括：
-
-APP调用WebView加载url
-
-掌握WebView的封装，了解所有的WebSettings配置，掌握WebViewClient、WebChromeClient
-
-掌握WebView和Native双向通信机制，会自己封装双向通信中间件
-
+1.  APP调用WebView加载url  
+2.  掌握WebView的封装，了解所有的WebSettings配置，掌握WebViewClient、WebChromeClient  
+3.  掌握WebView和Native双向通信机制，会自己封装双向通信中间件
 对WebView的封装可参考：[GitHub: AgentWeb](https://github.com/Justson/AgentWeb)
-
 对通信中间件原理理解：[GitHub：webprogress](https://github.com/xudjx/webprogress)
 
