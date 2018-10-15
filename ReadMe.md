@@ -147,7 +147,7 @@
 
 # Android开发高级
 
->引子：Android高级工程师招聘要求：  
+>引子：Android高级工程师招聘要求：
 >1. 熟悉Android SDK，熟悉Android UI，熟悉Android各种调试工具；  
 >2. 有丰富的Android应用架构能力，能够独立主导并架构App；  
 >3. Mobile Web 开发经验；具备各种复合技能：熟悉iOS、H5、Python、.NET等多种开发语言的优先考虑；  
